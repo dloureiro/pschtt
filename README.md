@@ -9,15 +9,17 @@ pschtt allows users to register the time spent on projects and activities, submi
 
 How-to make something work
 ------
-First :
+First, cd to the repository and do:
 
     npm install
 
-in the repository to get the node modules. Then :
+so that node will automatically install the required node modules (dependencies are described in the package.json file).
+
+Then, simply do:
 
     node server.js
 
-You now have a runnning express server running on the 3000 port.
+Voilà! You now have a runnning express server running on port 3000.
 
 Contributors
 ------
