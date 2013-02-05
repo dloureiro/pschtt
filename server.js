@@ -26,7 +26,8 @@ var widgets = [
 
 // index for /widgets/
 app.get('/widgets', function(req, res) {
-   res.send(widgets);
+	var myWidgetsList= { widgets: widgets };
+   res.send(myWidgetsList);
 });
 
 // show a specific widget
@@ -35,7 +36,8 @@ app.get('/widgets/:id', function(req, res) {
    if (!widgets[indx])
       res.send('There is no widget with id of ' + req.params.id);
    else
-      res.send(widgets[indx]);
+       var aWidget = {widget:widgets[indx]};
+      res.send(aWidget);
 });
 
 // add a widget
