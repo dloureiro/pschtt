@@ -13,7 +13,10 @@ exports.index = function(req, res) {
 
 // display new widget form
 exports.new = function(req, res) {
-   res.send('displaying new widget form');
+   //res.send('displaying new widget form');
+   // display new widget form
+    var filePath = require('path').normalize(__dirname + "/../public/widgets/new.html");
+    res.sendfile(filePath);
 };
 
 // add a widget
