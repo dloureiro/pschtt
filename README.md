@@ -19,7 +19,7 @@ Then, simply do:
 
     node server.js
 
-Voilà! You now have a runnning express server running on port 3000.
+Voilà! You now have a running express server on port 3000.
 
 Contributors
 ------
