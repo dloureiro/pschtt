@@ -19,14 +19,22 @@ exports.new = function(req, res) {
     res.sendfile(filePath);
 };
 
-// show a widget
+// show widget form
 exports.show = function(req, res) {
+    var filePath = require('path').normalize(__dirname + "/../public/widgets/show.html");
+    res.sendfile(filePath);
+};
+
+// get a widget
+exports.get = function(req, res) {
    var indx = parseInt(req.params.id) - 1;
    if (!widgets[indx])
       res.send('There is no widget with id of ' + req.params.id);
    else
     var aWidget = {widget:widgets[indx]};
     res.send(aWidget);
+    //var filePath = require('path').normalize(__dirname + "/../public/widgets/show.html");
+    //res.sendfile(filePath);
 };
 
 

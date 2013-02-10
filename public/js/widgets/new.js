@@ -6,7 +6,7 @@ $(document).ready(function() {
         var jqXHR = $.post("/widgets/create", {widgetname:name, widgetprice:price},
         function(data,status) {
             //alert(data + " : " + status);
-            window.location.href = "/widgets/" + data.widget.id;
+            window.location.href = "/widgets/" + data.widget.id + "/show";
         }, 'json');
 	    //.done(function() { alert("second success"); })
 	    //.fail(function() { alert("error"); })

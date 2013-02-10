@@ -10,8 +10,11 @@ exports.mapRoute = function(app, prefix) {
    // add
    app.get(prefix + '/new', prefixObj.new);
 
-   // show
-   app.get(prefix + '/:id', prefixObj.show);
+   // get
+   app.get(prefix + '/:id', prefixObj.get);
+
+   // get
+   app.get(prefix + '/:id/show', prefixObj.show);
 
    // create
    app.post(prefix + '/create', prefixObj.create);
