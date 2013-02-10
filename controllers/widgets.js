@@ -19,17 +19,6 @@ exports.new = function(req, res) {
     res.sendfile(filePath);
 };
 
-// add a widget
-exports.create = function(req, res) {
-  var indx = widgets.length + 1;
-  widgets[widgets.length] =
-   { id : indx,
-     name : req.body.widgetname,
-     price : parseFloat(req.body.widgetprice) };
-  console.log(widgets[indx-1]);
-  res.send('Widget ' + req.body.widgetname + ' added with id ' + indx);
-};
-
 // show a widget
 exports.show = function(req, res) {
    var indx = parseInt(req.params.id) - 1;
@@ -38,6 +27,22 @@ exports.show = function(req, res) {
    else
     var aWidget = {widget:widgets[indx]};
     res.send(aWidget);
+};
+
+
+// add a widget
+exports.create = function(req, res) {
+  var indx = widgets.length + 1;
+  widgets[widgets.length] =
+   { id : indx,
+     name : req.body.widgetname,
+     price : parseFloat(req.body.widgetprice) };
+  console.log(widgets[indx-1]);
+  var myWidget={widget:widgets[indx-1]};
+  console.log("Sending " + indx);
+  res.send(myWidget);
+    //req.params.id=indx;
+    //exports.show(req,res);
 };
 
 // delete a widget

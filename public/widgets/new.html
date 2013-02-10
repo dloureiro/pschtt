@@ -1,14 +1,16 @@
 <!doctype html>
 <html lang="en">
 <head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> 
+<script type="text/javascript" src="/js/mustache.js"></script>
+<script type="text/javascript" src="/js/widgets/new.js"></script>
  <meta charset="utf-8" />
  <title>Widgets</title>
 </head>
 <body>
 <h1>Add Widget:</h1>
 
-<form method="POST" action="/widgets/create"
-enctype="application/x-www-form-urlencoded">
+<!--<form action="/widgets/create" id="myForm" method="POST">-->
 
  <p>Widget name: <input type="text" name="widgetname"
  id="widgetname" size="25" required/></p>
@@ -24,5 +26,5 @@ enctype="application/x-www-form-urlencoded">
  <input type="submit" name="submit" id="submit" value="Submit"/>
  <input type="reset" name="reset" id="reset" value="Reset"/>
  </p>
- </form>
+<!--</form>-->
 </body>

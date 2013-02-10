@@ -32,6 +32,10 @@ prefixes.forEach(function(prefix){
    map.mapRoute(app,prefix); 
 });
 
+var pschttParameters = require("./controllers/pschtt");
+
+app.get("/pschttParameters",pschttParameters.index);
+
 http.createServer(app).listen(3000);
 
 console.log("Express server listening on port 3000");
