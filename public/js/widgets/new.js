@@ -1,6 +1,9 @@
 $(document).ready(function() {
     $('#submit').click(function(event) {
-        var jqXHR = $.post("/widgets/create", {widgetname:"bla", widgetprice:10},
+        var name = $("#widgetname").val();
+        var price = $("#widgetprice").val();
+	//        alert("Adding widget with name : " + name + " and price " + price);
+        var jqXHR = $.post("/widgets/create", {widgetname:name, widgetprice:price},
         function(data,status) {
             //alert(data + " : " + status);
             window.location.href = "/widgets/" + data.widget.id;
