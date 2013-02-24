@@ -1,10 +1,94 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> 
-	<script type="text/javascript" src="/js/mustache.js"></script>
-	<script type="text/javascript" src="/js/widgets/list.js"></script>
-    </head>
-    <body>      
-    </body>
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="js/modernizr-latest.js"></script>
+    <title>Page de test d'angular</title>
+</head>
+<body ng-app="pschtt">
+<!--
+<div class="container" ng-controller="main">
+    <div class="hero-unit">
+        <h3>{{hello}}</h3>
+        <input type="text" ng-model="hello" value="Hello LyonJS">
+        </input>
+    </div>
+</div>
+    -->
+<div class="container" ng-controller="crud">
+    <button id="initDatabase" class="btn" ng-click="initDataBase()">Initialisation de la base de données</button>
+    <button id="dropDatabase" class="btn" ng-click="dropDataBase()">Suppression de la base de données</button>
+    <button class="btn" ng-click="edit({})">Add</button>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Code</th>
+            <th>Titre</th>
+            <th>Etat</th>
+            <th>Type</th>
+            <th>Modifiable</th>
+            <th>CIR</th>
+            <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="of in ofs | orderBy:orderByCodeAscending" ng-click="edit(of)">
+            <td>{{of.code}}</td>
+            <td>{{of.title}}</td>
+            <td>{{of.state}}</td>
+            <td>{{of.type}}</td>
+            <td>{{of.changeable}}</td>
+            <td>{{of.cir}}</td>
+            <td>{{of.description}}</td>
+            <td>
+                <button class="btn btn-danger" ng-click="delete(of)">Delete</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div class="modal fade">
+        <div class="modal-header">
+            <h3>Edit</h3>
+        </div>
+        <div class="modal-body">
+            <form class="form">
+                <label>Code</label>
+                <input type="text" ng-model="of.code" required/>
+                <label>Titre</label>
+                <input type="text" ng-model="of.title" required/>
+                <label>Etat</label>
+                <input type="text" ng-model="of.state" required/>
+                <label>Type</label>
+                <input type="text" ng-model="of.type" required/>
+                <label>Modifiable</label>
+                <input type="checkbox" ng-model="of.changeable"/>
+                <label>CIR</label>
+                <input type="checkbox" ng-model="of.cir"/>
+                <label>Description</label>
+                <input type="text" ng-model="of.description" value=""/>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn" ng-click="save()">Save</button>
+        </div>
+    </div>
+</div>
+
+<!-- angular and jquery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
 </html>

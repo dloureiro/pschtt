@@ -4,28 +4,35 @@ exports.mapRoute = function(app, prefix) {
 
    var prefixObj = require('./controllers/' + prefix);
 
-   // index
-   app.get(prefix, prefixObj.index);
+   // collection : get
+   app.get(prefix, prefixObj.collection_get);
+/*
+   // collection : create
+   app.post(prefix + "s", prefixObj.collection_create);
 
-   // add
-   app.get(prefix + '/new', prefixObj.new);
+   // collection : update
+   app.put(prefix + "s", prefixObj.collection_update);
 
+   // collection : delete
+   app.del(prefix + "s", prefixObj.collection_delete);
+*/
    // get
-   app.get(prefix + '/:id', prefixObj.get);
+   app.get(prefix + '/:_id', prefixObj.item_get);
 
-   // get
-   app.get(prefix + '/:id/show', prefixObj.show);
+    // show
+//    app.get(prefix + '/:_id/show', prefixObj.item_show);
 
-   // create
-   app.post(prefix + '/create', prefixObj.create);
+    // create
+//    app.get(prefix + '/create', prefixObj.item_new);
 
-   // edit
-   app.get(prefix + '/:id/edit', prefixObj.edit);
+
+    // create
+   app.post(prefix, prefixObj.item_create);
 
    // update
-   app.put(prefix + '/:id', prefixObj.update);
+   app.put(prefix + '/:_id', prefixObj.item_update);
 
    // destroy
-   app.del(prefix + '/:id', prefixObj.destroy);
+   app.del(prefix + '/:_id', prefixObj.item_delete);
 
 };

@@ -25,7 +25,7 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-var prefixes = ['widgets'];
+var prefixes = ['ofs'];
 
 //map route to controller
 prefixes.forEach(function(prefix){
@@ -35,6 +35,12 @@ prefixes.forEach(function(prefix){
 var pschttParameters = require("./controllers/pschtt");
 
 app.get("/pschttParameters",pschttParameters.index);
+
+var OF = require("./controllers/ofs");
+
+app.get("/ofsDB/init", OF.initDB);
+app.get("/ofsDB/check", OF.checkDB);
+app.get("/ofsDB/drop", OF.dropDB);
 
 http.createServer(app).listen(3000);
 

@@ -7,7 +7,7 @@ var pschttParameters = {
    }
 };
 
-// index listing of widgets at /pschttParameters/
+// getting pschtt info at /pschttParameters/
 exports.index = function(req, res) {  
    res.send(pschttParameters);
 };

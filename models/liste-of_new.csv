@@ -1,0 +1,85 @@
+code;title;state;type;changeable;cir;description
+50;Férié;01-En cours;00-Base;FAUX;FAUX;Attention il ne agit pas de pointer vos congés: pour cela utiliser l'OF N° 60
+60;Congés;01-En cours;00-Base;FAUX;FAUX;
+100;Maladie;01-En cours;00-Base;FAUX;FAUX;
+300;Formation interne;01-En cours;00-Base;FAUX;FAUX;Formation nouvel arrivant ou interne (groupes de travail)
+400;Formation Externe : Préparation (slides, TP, répétitions);01-En cours;00-Base;FAUX;FAUX;
+450;Formation Externe : Exécution (journées effectives de formation);01-En cours;00-Base;FAUX;FAUX;
+500;Salons;01-En cours;00-Base;FAUX;FAUX;Salons n'ayant pas de code projet
+510;Production de supports;01-En cours;00-Base;FAUX;FAUX;
+520;Présence effective;01-En cours;00-Base;FAUX;FAUX;
+530;Post traitement - 1er contact avce 1 client après le salon;01-En cours;00-Base;FAUX;FAUX;
+600;Avant Vente;01-En cours;00-Base;FAUX;FAUX;Visite chez un clients pour présentation par exemple, préparation des offres
+610;Phoning;01-En cours;00-Base;FAUX;FAUX;
+620;RDV ext;01-En cours;00-Base;FAUX;FAUX;
+630;Offre;01-En cours;00-Base;FAUX;FAUX;
+640;Négociation;01-En cours;00-Base;FAUX;FAUX;
+650;Réunion commerciales (PIPE);01-En cours;00-Base;FAUX;FAUX;
+660;Meeting partenaires;01-En cours;00-Base;FAUX;FAUX;
+700;Fonctionnement;01-En cours;00-Base;FAUX;FAUX;Maintenance serveur, installation et mise à jour d'outils, mails
+800;Veille techno + WEB;01-En cours;00-Base;FAUX;FAUX;
+900;Marketing;01-En cours;00-Base;FAUX;FAUX;
+910;Animation Web;01-En cours;00-Base;FAUX;FAUX;Animation forum, twitter, linkedin, lecture flux RSS ...
+920;Communication formation;01-En cours;00-Base;FAUX;FAUX;
+930;Communication webinar;01-En cours;00-Base;FAUX;FAUX;
+940;Préparation formation;01-En cours;00-Base;FAUX;FAUX;
+950;Préparation webinar;01-En cours;00-Base;FAUX;FAUX;
+1146;R&D Dagda2 - Thèse;03-Terminé;05-Produits;VRAI;VRAI;
+1147;R&D libdadi;03-Terminé;05-Produits;VRAI;VRAI;
+1148;R&D Décrypthon;03-Terminé;05-Produits;VRAI;VRAI;
+1149;Stage administration (Pierre-Jean Prost);03-Terminé;05-Produits;VRAI;VRAI;
+1150;Projet EDF R&D Vishnu-LDAP;03-Terminé;05-Produits;VRAI;VRAI;
+1151;Projet EDF R&D Vishnu-LSF;03-Terminé;05-Produits;VRAI;VRAI;
+1152;R&D Projet Ecoperfs;03-Terminé;03-Services liés au produit;VRAI;VRAI;
+1153;Projet EDF R&D Vishnu-DAT;03-Terminé;05-Produits;VRAI;VRAI;
+1154;Projet MAR;03-Terminé;03-Services liés au produit;VRAI;VRAI;
+1155;Projet FP7 CASUAL;03-Terminé;05-Produits;VRAI;VRAI;
+1156;Projet IRT Bio COLONY;01-En cours;05-Produits;VRAI;VRAI;
+1157;Projet R&D ANR SOP;03-Terminé;05-Produits;VRAI;VRAI;
+1158;Projet EDF R&D et Améliorations VISHNU Salome;03-Terminé;05-Produits;VRAI;VRAI;
+1159;Projet EDF R&D et Support;01-En cours;01-Support;VRAI;VRAI;
+1160;Projet portage SysFera-DS sur applis IBM (AIX, DB2, Websphère);03-Terminé;05-Produits;VRAI;VRAI;
+1161;R&D SysFera-DS Webboard v3;03-Terminé;05-Produits;VRAI;VRAI;
+1162;Projet WebBoard pour le CCRT;02-Abandonné;03-Services liés au produit;VRAI;VRAI;
+1163;Projet Techlimed é indexation sites tunisiens;01-En cours;03-Services liés au produit;VRAI;VRAI;
+1164;Projet R&D libDadiCORBA;03-Terminé;05-Produits;VRAI;VRAI;
+1165;Formations Vishnu utilisateur et administrateur;02-Abandonné;04-Formation;VRAI;VRAI;
+1166;R&D Gestion des applications;02-Abandonné;05-Produits;VRAI;VRAI;
+1167;R&D Finance Traaader pour RII Finance;03-Terminé;02-NRE;VRAI;VRAI;
+1168;EverCAD - gestion dynamique de VM + load balancing serveur web + CloudSigma;02-Abandonné;02-NRE;VRAI;VRAI;
+1169;R&D - Amélioration TMS : passage de paramètres;03-Terminé;05-Produits;VRAI;VRAI;
+1170;Techlimed - passage en SaaS;03-Terminé;05-Produits;VRAI;VRAI;
+1171;Genostar - passage en SaaS;02-Abandonné;02-NRE;VRAI;VRAI;
+1172;Projet EDF R&D et Améliorations VISHNU (TMS, CLI);01-En cours;05-Produits;VRAI;VRAI;
+1173;"Formation ""introduction au parallélisme"" pour Cosmo Company";02-Abandonné;04-Formation;VRAI;VRAI;
+1174;Projet EDF R&D - Amélioration compatibilité gestion de versions;02-Abandonné;05-Produits;VRAI;VRAI;
+1175;R&D PSMN - Projet Carpaccio POC;03-Terminé;03-Services liés au produit;VRAI;VRAI;
+1176;Projet R&D ANR SOP - ZeroMQ + simplification de Vishnu;01-En cours;05-Produits;VRAI;VRAI;
+1177;Projet EDF R&D - Améliorations pour Webboard, Work;03-Terminé;05-Produits;VRAI;VRAI;
+1178;Projet EDF R&D - Automatisation des tests;01-En cours;05-Produits;VRAI;VRAI;
+1179;Projet EDF R&D - Soumission de jobs sur une machine sans batch;01-En cours;05-Produits;VRAI;VRAI;
+1180;R&D Vishnu Abstraction des bases de données;01-En cours;05-Produits;VRAI;VRAI;
+1181;"Prestation ""le générateur""";04-Attente;02-NRE;VRAI;VRAI;
+1182;R&D - stage Scilab;03-Terminé;03-Services liés au produit;VRAI;VRAI;
+1183;R&D SysFera-DS Webboard v4;01-En cours;05-Produits;VRAI;VRAI;
+1184;R&D - Stage Monitoring, Packaging;01-En cours;05-Produits;VRAI;VRAI;
+1185;Techlimed - Installation repository Debian;03-Terminé;02-NRE;VRAI;VRAI;
+1186;R&D - Outils passage en SaaS. Use case Tuleap/Enalean. uCanSaaS;01-En cours;05-Produits;VRAI;VRAI;
+1187;POC CRIHAN - ROMEO;01-En cours;03-Services liés au produit;VRAI;VRAI;
+1188;R&D -  Visualisation dans WB - Use case CINES;01-En cours;05-Produits;VRAI;VRAI;
+1189;Projet FP7 - PaaSage;01-En cours;05-Produits;VRAI;VRAI;
+1190;Melis - passage solution dans du cloud;04-Attente;02-NRE;VRAI;VRAI;
+1191;Virdys - Passage en SaaS;04-Attente;02-NRE;VRAI;VRAI;
+1192;PicViz - POC Amazon;01-En cours;02-NRE;VRAI;VRAI;
+1193;Projet EDF R&D - Renommage commandes FMS;01-En cours;05-Produits;VRAI;VRAI;
+1194;Projet IRT - CT6 (Centre Technique 6);01-En cours;03-Services liés au produit;VRAI;VRAI;
+1195;IKNOVA - SSO & Formation;04-Attente;02-NRE;VRAI;VRAI;
+1196;Projet Docea Power - POC SaaS;04-Attente;02-NRE;VRAI;VRAI;
+1197;Projet EDF R&D - DAT - PTI - PTE;04-Attente;05-Produits;VRAI;VRAI;
+1198;Projet CINES - Mise à disposition WebBoard Visu;04-Attente;05-Produits;VRAI;VRAI;
+1199;Projet eMundus - Passage en SaaS;04-Attente;02-NRE;VRAI;VRAI;
+1200;Projet Eval & Go - Passage en SaaS;04-Attente;02-NRE;VRAI;VRAI;
+1201;Projet processus formation;01-En cours;;VRAI;VRAI;
+1202;Projet processus offre;01-En cours;;VRAI;VRAI;
+1203;Projet mise en place CRM;01-En cours;;VRAI;VRAI;
+1204;Projet Arctique - Passage en SaaS - Démonstrateur;04-Attente;02-NRE;VRAI;VRAI;
